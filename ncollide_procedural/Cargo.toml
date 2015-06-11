@@ -18,5 +18,14 @@ path = "lib.rs"
 rustc-serialize = "*"
 num = "*"
 nalgebra = "*"
-ncollide_utils = "*"
-ncollide_math = "*"
+#ncollide_utils = "*"
+#ncollide_math = "*"
+
+
+# Just for demo link purpose!
+
+[dependencies.ncollide_utils]
+path = "../ncollide_utils"
+
+[dependencies.ncollide_math]
+path = "../ncollide_math"

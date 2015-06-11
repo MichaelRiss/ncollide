@@ -23,11 +23,35 @@ include = [
 name = "ncollide"
 path = "src/lib.rs"
 
-[dependencies]
-ncollide_math = "*"
-ncollide_utils = "*"
-ncollide_entities = "*"
-ncollide_queries = "*"
-ncollide_pipeline = "*"
-ncollide_procedural = "*"
-ncollide_transformation = "*"
+#[dependencies]
+#ncollide_math = "*"
+#ncollide_utils = "*"
+#ncollide_entities = "*"
+#ncollide_queries = "*"
+#ncollide_pipeline = "*"
+#ncollide_procedural = "*"
+#ncollide_transformation = "*"
+
+
+# Just for demo link purpose!
+
+[dependencies.ncollide_math]
+path = "ncollide_math"
+
+[dependencies.ncollide_utils]
+path = "ncollide_utils"
+
+[dependencies.ncollide_entities]
+path = "ncollide_entities"
+
+[dependencies.ncollide_queries]
+path = "ncollide_queries"
+
+[dependencies.ncollide_pipeline]
+path = "ncollide_pipeline"
+
+[dependencies.ncollide_procedural]
+path = "ncollide_procedural"
+
+[dependencies.ncollide_transformation]
+path = "ncollide_transformation"
