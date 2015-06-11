@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/sebcrozet/ncollide.svg)](https://travis-ci.org/sebcrozet/ncollide)
+[![Build Status](https://travis-ci.org/MichaelRiss/ncollide.svg)](https://travis-ci.org/MichaelRiss/ncollide)
 
 ncollide
 ========
