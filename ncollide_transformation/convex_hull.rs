@@ -193,6 +193,8 @@ fn get_initial_mesh<P>(points: &mut [P], undecidable: &mut Vec<usize>) -> Initia
      */
     let cov              = utils::cov(points);
     let (eigvec, eigval) = na::eigen_qr(&cov, &FloatError::epsilon(), 1000);
+    println!( "get_initial_mesh:eigvec = {:?}", eigvec );
+    println!( "get_initial_mesh:eigval = {:?}", eigval );
     let mut eigpairs = [ (eigvec.col(0), eigval[0]), (eigvec.col(1), eigval[1]), (eigvec.col(2), eigval[2]) ];
 
     /*
@@ -368,7 +370,7 @@ fn support_point_2<P>(direction: &P::Vect, points : &[P]) -> Option<usize>
     let mut argmax = None;
     let _max: <P::Vect as Vect>::Scalar = Bounded::max_value();
     let mut max    = -_max;
-
+    
     for (id, pt) in points.iter().enumerate() {
         let dot = na::dot(direction, pt.as_vec());
 

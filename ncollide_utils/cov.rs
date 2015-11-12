@@ -22,6 +22,7 @@ pub fn cov_and_center<P>(pts: &[P]) -> (<P::Vect as Outer>::OuterProductType, P)
           <P::Vect as Outer>::OuterProductType: Zero {
     let center = ::center(pts);
     let mut cov: <P::Vect as Outer>::OuterProductType = na::zero();
+    println!( "cov::cov_and_center: cov1 = {:?}", cov );
     let normalizer: <P::Vect as Vect>::Scalar = na::cast(1.0 / (pts.len() as f64));
 
     for p in pts.iter() {
